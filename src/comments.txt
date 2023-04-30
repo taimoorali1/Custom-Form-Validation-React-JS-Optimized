@@ -1,0 +1,58 @@
+  const handleChange = (event) => {
+    // const { name, value, type, checked, files } = event.target;
+    // const newValue =
+    //   type === "checkbox" ? checked : type === "file" ? files[0] : value;
+    // setValues({ ...values, [name]: newValue });
+    setValues({ ...values, [event.target.name]: event.target.value });
+  };
+
+        {/* <div>
+          <label htmlFor="checkbox">Agree to proceed</label>
+          <input
+            id="checkbox"
+            type="checkbox"
+            name="checkbox"
+            checked={values.checkbox}
+            onChange={handleChange}
+          />
+          {errors.checkbox && (
+            <p className="mb-0" style={{ color: "red" }}>
+              {errors.checkbox}
+            </p>
+          )}
+        </div> */}
+
+        {/* <div>
+          <label htmlFor="radio1" className="mx-3">
+            Male
+          </label>
+          <input
+            id="radio1"
+            type="radio"
+            name="radio"
+            value="male"
+            checked={values.radio === "male"}
+            onChange={handleChange}
+            error={errors.radio}
+          />
+
+          <br />
+          <label htmlFor="radio2" className="mx-3">
+            Female
+          </label>
+          <input
+            id="radio2"
+            type="radio"
+            name="radio"
+            value="female"
+            checked={values.radio === "female"}
+            onChange={handleChange}
+            error={errors.radio}
+          />
+
+          {errors.radio && (
+            <p className="mb-0" style={{ color: "red" }}>
+              {errors.radio}
+            </p>
+          )}
+        </div> */}
